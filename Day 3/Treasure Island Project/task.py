@@ -22,3 +22,28 @@ ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
 ''')
 print("Welcome to Treasure Island.")
 print("Your mission is to find the treasure.")
+
+pre_direct_1 = input("Left or Right?")
+direct_1 = pre_direct_1.capitalize()[0]
+if direct_1 == "R":
+    print("Fall into a hole.")
+    print("Game Over.")
+elif direct_1 == "L":
+    pre_direct_2 = input("Swim or Wait?")
+    direct_2 = pre_direct_2.capitalize()[0]
+    if direct_2 == "S":
+        print("Attacked by a trout.")
+        print("Game Over.")
+    elif direct_2 == "W":
+        pre_direct_3 = input("Which door?: Red, Yellow, or Blue")
+        direct_3 = pre_direct_3.capitalize()[0]
+        if direct_3 == "R":
+            print("Burned by Fire.")
+            print("Game Over.")
+        elif direct_3 == "B":
+            print("Eaten by beasts.")
+            print("Game Over.")
+        elif direct_3 == "Y":
+            print("You win!")
+        else:
+            print("Game Over.")
